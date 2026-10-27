@@ -1,5 +1,3 @@
-import { resolve } from "path";
-
 export type Skill = {
     id: string;
     name: string;
@@ -29,11 +27,6 @@ export let SKILLS: Skill[] = [
 ]
 
 export async function getSkills(){
-    await new Promise(resolve => {
-        setTimeout(() => {
-            resolve(null);
-        }, 3000)
-    });
     return [...SKILLS];
 }
 
