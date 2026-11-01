@@ -1,12 +1,10 @@
-export default function SkillLoading(){
-    return(
-        <div className="p-6 max-w-md mx-auto my-4">
-            <div className="card bg-base-200">
-                <div className="card-body">
-                    <div className="skeleton h-6 w-3/4"></div>
-                    <div className="skeleton h-4 w-full mt-2"></div>
-                </div>
-            </div>
-        </div>
-    )
+export default function GlobalLoading() {
+  return (
+    <div className="min-h-[50vh] flex items-center justify-center">
+      <div className="text-center">
+        <span className="loading loading-spinner loading-lg text-primary"></span>
+        <p className="mt-4 text-base-content/70">Loading...</p>
+      </div>
+    </div>
+  );
 }
